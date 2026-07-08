@@ -1,18 +1,20 @@
 :root {
-  --milk: #f8f5ef;
-  --ivory: #fffdf8;
-  --porcelain: #fffaf2;
-  --card: #ffffff;
-  --ink: #2a1d16;
-  --muted: #78685d;
-  --soft: #aa9a8b;
-  --line: rgba(92, 63, 43, 0.14);
-  --line-strong: rgba(92, 63, 43, 0.22);
-  --coffee: #5c3f2b;
-  --caramel: #b98555;
-  --bronze: #9a6d43;
-  --shadow: 0 18px 48px rgba(72, 48, 31, 0.08);
-  --shadow-hover: 0 26px 70px rgba(72, 48, 31, 0.13);
+  --milk: #eee2d1;
+  --ivory: #e7d7c2;
+  --porcelain: #e2cfb7;
+  --card: #f5ebdd;
+  --ink: #3c2a1e;
+  --muted: #705a47;
+  --soft: #8b7a68;
+  --line: rgba(90, 60, 35, 0.12);
+  --line-strong: rgba(90, 60, 35, 0.2);
+  --coffee: #5e3b24;
+  --caramel: #8c5a32;
+  --bronze: #8b7a68;
+  --hover: #7a4e30;
+  --button-text: #fff9f2;
+  --shadow: 0 12px 35px rgba(85, 55, 25, 0.12);
+  --shadow-hover: 0 18px 48px rgba(85, 55, 25, 0.18);
 }
 
 * {
@@ -29,8 +31,9 @@ body {
   overflow-x: hidden;
   color: var(--ink);
   background:
-    radial-gradient(circle at 12% 10%, rgba(185, 133, 85, 0.09), transparent 28%),
-    linear-gradient(180deg, var(--milk), #f3ece1 100%);
+    radial-gradient(circle at 16% 8%, rgba(140, 90, 50, 0.16), transparent 30%),
+    radial-gradient(circle at 90% 42%, rgba(139, 122, 104, 0.18), transparent 32%),
+    linear-gradient(180deg, var(--milk), var(--ivory) 48%, var(--porcelain) 100%);
   font-family: "Inter", Arial, sans-serif;
   line-height: 1.55;
 }
@@ -49,8 +52,8 @@ svg {
   position: sticky;
   top: 0;
   z-index: 30;
-  border-bottom: 1px solid rgba(92, 63, 43, 0.08);
-  background: rgba(248, 245, 239, 0.78);
+  border-bottom: 1px solid rgba(90, 60, 35, 0.12);
+  background: rgba(139, 122, 104, 0.86);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
 }
@@ -66,7 +69,7 @@ svg {
 }
 
 .logo {
-  color: var(--ink);
+  color: #fff9f2;
   font-family: "Playfair Display", Georgia, serif;
   font-size: 25px;
   font-weight: 800;
@@ -79,7 +82,7 @@ svg {
   align-items: center;
   justify-content: center;
   gap: 26px;
-  color: var(--muted);
+  color: rgba(255, 249, 242, 0.78);
   font-size: 14px;
   font-weight: 700;
 }
@@ -93,7 +96,7 @@ svg {
 }
 
 .nav-links a:hover {
-  color: var(--coffee);
+  color: #fff9f2;
 }
 
 .nav-button,
@@ -105,8 +108,8 @@ svg {
   justify-content: center;
   border: 1px solid var(--line-strong);
   border-radius: 999px;
-  background: rgba(255, 253, 248, 0.72);
-  color: var(--coffee);
+  background: rgba(245, 235, 221, 0.72);
+  color: var(--ink);
   font-size: 13px;
   font-weight: 800;
   white-space: nowrap;
@@ -115,7 +118,7 @@ svg {
 
 .nav-button {
   background: var(--coffee);
-  color: var(--ivory);
+  color: var(--button-text);
   border-color: var(--coffee);
 }
 
@@ -127,7 +130,7 @@ svg {
 }
 
 .nav-button:hover {
-  background: #4d3424;
+  background: var(--hover);
 }
 
 .back-link {
@@ -140,8 +143,8 @@ svg {
   height: 42px;
   border: 1px solid var(--line);
   border-radius: 999px;
-  background: rgba(255, 253, 248, 0.75);
-  color: var(--coffee);
+  background: rgba(245, 235, 221, 0.72);
+  color: #fff9f2;
   cursor: pointer;
 }
 
@@ -172,6 +175,9 @@ svg {
   padding: 112px 24px 104px;
   display: grid;
   align-items: center;
+  background:
+    radial-gradient(circle at 15% 22%, rgba(140, 90, 50, 0.18), transparent 30%),
+    radial-gradient(circle at 80% 78%, rgba(226, 207, 183, 0.72), transparent 38%);
 }
 
 .hero-content {
@@ -190,7 +196,7 @@ svg {
   padding: 8px 13px;
   border: 1px solid var(--line);
   border-radius: 999px;
-  background: rgba(255, 253, 248, 0.58);
+  background: rgba(245, 235, 221, 0.68);
   color: var(--bronze);
   font-size: 12px;
   font-weight: 800;
@@ -240,13 +246,13 @@ svg {
 .menu-more-button {
   border: 1px solid var(--coffee);
   background: var(--coffee);
-  color: var(--ivory);
-  box-shadow: 0 16px 36px rgba(92, 63, 43, 0.16);
+  color: var(--button-text);
+  box-shadow: var(--shadow);
 }
 
 .button-secondary {
   border: 1px solid var(--line-strong);
-  background: rgba(255, 253, 248, 0.68);
+  background: rgba(245, 235, 221, 0.7);
   color: var(--coffee);
 }
 
@@ -274,6 +280,9 @@ svg {
 .contacts {
   padding-top: 62px;
   padding-bottom: 80px;
+  background:
+    radial-gradient(circle at 12% 0%, rgba(140, 90, 50, 0.11), transparent 28%),
+    radial-gradient(circle at 92% 100%, rgba(139, 122, 104, 0.16), transparent 30%);
 }
 
 .contacts-grid {
@@ -290,7 +299,7 @@ svg {
   gap: 11px;
   border: 1px solid var(--line);
   border-radius: 22px;
-  background: rgba(255, 255, 255, 0.72);
+  background: rgba(245, 235, 221, 0.82);
   color: var(--ink);
   box-shadow: 0 14px 34px rgba(72, 48, 31, 0.055);
   transition: border-color 280ms, box-shadow 280ms, transform 280ms, color 280ms;
@@ -310,7 +319,7 @@ svg {
   align-items: center;
   justify-content: center;
   border-radius: 14px;
-  background: #f4eadc;
+  background: #e7d7c2;
   color: var(--coffee);
   transition: background 280ms, color 280ms, transform 280ms;
 }
@@ -365,7 +374,7 @@ svg {
 
 .instagram-card:hover .instagram-icon {
   background: linear-gradient(135deg, #e1306c, #833ab4 52%, #f77737);
-  color: white;
+  color: #fff9f2;
 }
 
 .instagram-link {
@@ -381,8 +390,8 @@ svg {
 .footer {
   padding: 20px 24px;
   border-top: 1px solid var(--line);
-  background: #eee6da;
-  color: var(--muted);
+  background: #4a3527;
+  color: #fff9f2;
   text-align: center;
   font-size: 13px;
 }
@@ -393,8 +402,9 @@ svg {
 
 .menu-page {
   background:
-    radial-gradient(circle at 50% 0%, rgba(185, 133, 85, 0.11), transparent 28%),
-    linear-gradient(180deg, var(--milk), #f1e8dc 100%);
+    radial-gradient(circle at 50% 0%, rgba(140, 90, 50, 0.18), transparent 28%),
+    radial-gradient(circle at 10% 85%, rgba(139, 122, 104, 0.18), transparent 32%),
+    linear-gradient(180deg, var(--milk), var(--ivory) 55%, var(--porcelain) 100%);
 }
 
 .menu-page .menu-section {
@@ -402,6 +412,9 @@ svg {
   min-height: calc(100vh - 68px);
   margin: 0 auto;
   padding: 62px 0 72px;
+  background:
+    radial-gradient(circle at 88% 12%, rgba(140, 90, 50, 0.11), transparent 30%),
+    radial-gradient(circle at 12% 92%, rgba(226, 207, 183, 0.7), transparent 34%);
 }
 
 .menu-heading {
@@ -442,7 +455,7 @@ svg {
   gap: 4px;
   border: 1px solid var(--line);
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.68);
+  background: rgba(245, 235, 221, 0.76);
   box-shadow: 0 14px 34px rgba(72, 48, 31, 0.055);
 }
 
@@ -478,7 +491,7 @@ svg {
 
 .filter-button:hover,
 .filter-button.active {
-  color: var(--ivory);
+  color: var(--button-text);
 }
 
 .menu-grid {
@@ -533,7 +546,7 @@ svg {
   align-items: center;
   border: 1px solid var(--line);
   border-radius: 999px;
-  background: #f6eee2;
+  background: #e7d7c2;
   color: var(--bronze);
   font-size: 10px;
   font-weight: 800;
@@ -628,7 +641,7 @@ svg {
     gap: 2px;
     border: 1px solid var(--line);
     border-radius: 18px;
-    background: rgba(255, 253, 248, 0.94);
+    background: rgba(245, 235, 221, 0.96);
     box-shadow: var(--shadow);
   }
 
