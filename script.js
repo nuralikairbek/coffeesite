@@ -8,6 +8,9 @@ function createWhatsAppLink(message) {
 const reservationButtons = document.querySelectorAll("[data-whatsapp-reservation]");
 const contactButton = document.querySelector("[data-whatsapp-contact]");
 const menuQuestionButton = document.querySelector("[data-whatsapp-menu-question]");
+const nav = document.querySelector(".nav");
+const navToggle = document.querySelector(".nav-toggle");
+const navLinks = document.querySelectorAll(".nav-links a");
 const reservationMessage = "Здравствуйте!\nЯ хочу забронировать столик в Coffee Space.";
 
 reservationButtons.forEach(function (reservationButton) {
@@ -28,6 +31,23 @@ if (menuQuestionButton) {
   menuQuestionButton.rel = "noopener";
 }
 
+if (nav && navToggle) {
+  navToggle.addEventListener("click", function () {
+    const isOpen = nav.classList.toggle("is-open");
+
+    navToggle.setAttribute("aria-expanded", String(isOpen));
+    navToggle.setAttribute("aria-label", isOpen ? "Закрыть меню" : "Открыть меню");
+  });
+
+  navLinks.forEach(function (link) {
+    link.addEventListener("click", function () {
+      nav.classList.remove("is-open");
+      navToggle.setAttribute("aria-expanded", "false");
+      navToggle.setAttribute("aria-label", "Открыть меню");
+    });
+  });
+}
+
 const menuFilter = document.querySelector(".menu-filter");
 const filterIndicator = document.querySelector(".filter-indicator");
 const filterButtons = document.querySelectorAll(".filter-button");
@@ -42,7 +62,7 @@ function moveFilterIndicator(activeButton) {
 
   const filterRect = menuFilter.getBoundingClientRect();
   const buttonRect = activeButton.getBoundingClientRect();
-  const left = buttonRect.left - filterRect.left;
+  const left = buttonRect.left - filterRect.left + menuFilter.scrollLeft;
 
   filterIndicator.style.width = buttonRect.width + "px";
   filterIndicator.style.transform = "translateX(" + left + "px)";
