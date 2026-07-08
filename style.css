@@ -771,6 +771,7 @@ a {
 }
 
 .contacts-address {
+  margin-bottom: 14px;
   cursor: pointer;
 }
 
@@ -784,7 +785,7 @@ a {
 }
 
 .contacts-address:hover {
-  color: var(--coffee-brown);
+  color: var(--coffee-caramel);
 }
 
 .contacts-address:hover::after {
@@ -1355,5 +1356,58 @@ a {
 
   .contacts-card {
     padding: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .menu-filter {
+    width: 100%;
+    max-width: 100%;
+    min-height: 56px;
+    margin: 0 auto 34px;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    gap: 6px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    border-radius: 999px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .menu-filter::-webkit-scrollbar {
+    display: none;
+  }
+
+  .filter-indicator {
+    display: none;
+  }
+
+  .filter-button {
+    min-height: 44px;
+    padding: 0 16px;
+    flex: 0 0 auto;
+    border-radius: 999px;
+    white-space: nowrap;
+    color: #7b6654;
+  }
+
+  .filter-button.active {
+    background-color: var(--coffee-dark);
+    color: var(--coffee-cream);
+  }
+
+  .filter-button:hover {
+    transform: none;
+  }
+}
+
+@media (max-width: 390px) {
+  .filter-button {
+    padding: 0 14px;
+    font-size: 13px;
   }
 }
