@@ -555,6 +555,20 @@ a {
   transform: translateY(-3px);
 }
 
+.menu-page .menu-section {
+  min-height: calc(100vh - 73px);
+  padding-top: 96px;
+  padding-bottom: 92px;
+}
+
+.menu-page .menu-heading {
+  margin-bottom: 30px;
+}
+
+.menu-page .menu-heading h2 {
+  font-size: clamp(44px, 7vw, 64px);
+}
+
 .about {
   max-width: none;
   position: relative;

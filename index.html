@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
@@ -20,9 +20,8 @@
       </button>
       <div class="nav-links">
         <a href="#home">Главная</a>
-        <a href="#menu">Меню</a>
+        <a href="menu.html">Меню</a>
         <a href="#about">О нас</a>
-        <a href="#reviews">Отзывы</a>
         <a href="#contacts">Контакты</a>
       </div>
       <a class="nav-button" href="#contacts" data-whatsapp-reservation>Забронировать столик</a>
@@ -40,7 +39,7 @@
             кто ценит вкус, детали и время для себя.
           </p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#menu">Смотреть меню</a>
+            <a class="button button-primary" href="menu.html">Смотреть меню</a>
             <a class="button button-secondary" href="#about">О нас</a>
           </div>
 
@@ -58,271 +57,6 @@
             alt="Чашка кофе на столе"
           >
         </div>
-      </div>
-    </section>
-
-    <section class="section menu-section" id="menu">
-      <div class="menu-heading">
-        <p class="menu-eyebrow">Signature selection</p>
-        <h2>Меню</h2>
-        <p>
-          Кофейная классика, завтраки, десерты и прохладные напитки для любого настроения.
-        </p>
-      </div>
-
-      <div class="menu-filter" aria-label="Категории меню">
-        <span class="filter-indicator" aria-hidden="true"></span>
-        <button class="filter-button active" type="button" data-filter="all">Все</button>
-        <button class="filter-button" type="button" data-filter="coffee">Кофе</button>
-        <button class="filter-button" type="button" data-filter="breakfast">Завтраки</button>
-        <button class="filter-button" type="button" data-filter="desserts">Десерты</button>
-        <button class="filter-button" type="button" data-filter="cold">Холодные напитки</button>
-      </div>
-
-      <div class="menu-grid">
-        <article class="menu-card" data-category="coffee">
-          <img src="https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Капучино">
-          <span class="menu-badge">Кофе</span>
-          <h3>Капучино</h3>
-          <p>Эспрессо, молоко и нежная молочная пенка.</p>
-          <div class="card-footer">
-            <span class="price">1900 ₸</span>
-          </div>
-        </article>
-
-        <article class="menu-card" data-category="coffee">
-          <img src="https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Латте">
-          <span class="menu-badge">Кофе</span>
-          <h3>Латте</h3>
-          <p>Мягкий кофейный напиток с большим количеством молока.</p>
-          <div class="card-footer">
-            <span class="price">2100 ₸</span>
-          </div>
-        </article>
-
-        <article class="menu-card" data-category="coffee">
-          <img src="https://images.pexels.com/photos/977876/pexels-photo-977876.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Американо">
-          <span class="menu-badge">Кофе</span>
-          <h3>Американо</h3>
-          <p>Классический черный кофе с насыщенным вкусом.</p>
-          <div class="card-footer">
-            <span class="price">1500 ₸</span>
-          </div>
-        </article>
-
-        <article class="menu-card" data-category="coffee">
-          <img src="https://images.pexels.com/photos/374885/pexels-photo-374885.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Раф">
-          <span class="menu-badge">Кофе</span>
-          <h3>Раф</h3>
-          <p>Сливочный кофе с ванильной ноткой и мягкой текстурой.</p>
-          <div class="card-footer">
-            <span class="price">2400 ₸</span>
-          </div>
-        </article>
-
-        <article class="menu-card" data-category="coffee">
-          <img src="https://images.pexels.com/photos/2396220/pexels-photo-2396220.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Флэт уайт">
-          <span class="menu-badge">Кофе</span>
-          <h3>Флэт уайт</h3>
-          <p>Насыщенный эспрессо с тонким слоем молочной пенки.</p>
-          <div class="card-footer">
-            <span class="price">2200 ₸</span>
-          </div>
-        </article>
-
-        <article class="menu-card" data-category="coffee">
-          <img src="https://images.pexels.com/photos/434213/pexels-photo-434213.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Мокко">
-          <span class="menu-badge">Кофе</span>
-          <h3>Мокко</h3>
-          <p>Кофе с молоком, шоколадом и легкой сладостью.</p>
-          <div class="card-footer">
-            <span class="price">2300 ₸</span>
-          </div>
-        </article>
-
-        <article class="menu-card" data-category="breakfast">
-          <img src="https://images.pexels.com/photos/566566/pexels-photo-566566.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Круассан с лососем">
-          <span class="menu-badge">Завтраки</span>
-          <h3>Круассан с лососем</h3>
-          <p>Слоеный круассан, слабосоленый лосось, крем-сыр и свежая зелень.</p>
-          <div class="card-footer">
-            <span class="price">3200 ₸</span>
-          </div>
-        </article>
-
-        <article class="menu-card" data-category="breakfast">
-          <img src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Сырники">
-          <span class="menu-badge">Завтраки</span>
-          <h3>Сырники</h3>
-          <p>Нежные творожные сырники со сметаной и ягодным соусом.</p>
-          <div class="card-footer">
-            <span class="price">2600 ₸</span>
-          </div>
-        </article>
-
-        <article class="menu-card" data-category="breakfast">
-          <img src="https://images.pexels.com/photos/1640774/pexels-photo-1640774.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Овсяная каша">
-          <span class="menu-badge">Завтраки</span>
-          <h3>Овсяная каша</h3>
-          <p>Овсяные хлопья на молоке с бананом, орехами и медом.</p>
-          <div class="card-footer">
-            <span class="price">1800 ₸</span>
-          </div>
-        </article>
-
-        <article class="menu-card" data-category="breakfast">
-          <img src="https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Авокадо-тост">
-          <span class="menu-badge">Завтраки</span>
-          <h3>Авокадо-тост</h3>
-          <p>Хрустящий тост с авокадо, яйцом пашот и лимонной заправкой.</p>
-          <div class="card-footer">
-            <span class="price">2900 ₸</span>
-          </div>
-        </article>
-
-        <article class="menu-card" data-category="breakfast">
-          <img src="https://images.pexels.com/photos/6294248/pexels-photo-6294248.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Омлет с сыром">
-          <span class="menu-badge">Завтраки</span>
-          <h3>Омлет с сыром</h3>
-          <p>Пышный омлет с сыром, зеленью и свежими овощами.</p>
-          <div class="card-footer">
-            <span class="price">2400 ₸</span>
-          </div>
-        </article>
-
-        <article class="menu-card" data-category="breakfast">
-          <img src="https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Гранола с йогуртом">
-          <span class="menu-badge">Завтраки</span>
-          <h3>Гранола с йогуртом</h3>
-          <p>Хрустящая гранола, густой йогурт, ягоды и мед.</p>
-          <div class="card-footer">
-            <span class="price">2200 ₸</span>
-          </div>
-        </article>
-
-        <article class="menu-card" data-category="desserts">
-          <img src="https://images.pexels.com/photos/1126359/pexels-photo-1126359.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Чизкейк">
-          <span class="menu-badge">Десерты</span>
-          <h3>Чизкейк</h3>
-          <p>Классический сливочный чизкейк на песочной основе.</p>
-          <div class="card-footer">
-            <span class="price">2100 ₸</span>
-          </div>
-        </article>
-
-        <article class="menu-card" data-category="desserts">
-          <img src="https://images.pexels.com/photos/6880219/pexels-photo-6880219.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Тирамису">
-          <span class="menu-badge">Десерты</span>
-          <h3>Тирамису</h3>
-          <p>Воздушный десерт с маскарпоне, эспрессо и какао.</p>
-          <div class="card-footer">
-            <span class="price">2300 ₸</span>
-          </div>
-        </article>
-
-        <article class="menu-card" data-category="desserts">
-          <img src="https://images.pexels.com/photos/291528/pexels-photo-291528.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Медовик">
-          <span class="menu-badge">Десерты</span>
-          <h3>Медовик</h3>
-          <p>Тонкие медовые коржи с мягким сметанным кремом.</p>
-          <div class="card-footer">
-            <span class="price">2000 ₸</span>
-          </div>
-        </article>
-
-        <article class="menu-card" data-category="desserts">
-          <img src="https://images.pexels.com/photos/45202/brownie-dessert-cake-sweet-45202.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Брауни">
-          <span class="menu-badge">Десерты</span>
-          <h3>Брауни</h3>
-          <p>Плотный шоколадный брауни с насыщенным какао и орехами.</p>
-          <div class="card-footer">
-            <span class="price">1900 ₸</span>
-          </div>
-        </article>
-
-        <article class="menu-card" data-category="desserts">
-          <img src="https://images.pexels.com/photos/372851/pexels-photo-372851.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Эклер">
-          <span class="menu-badge">Десерты</span>
-          <h3>Эклер</h3>
-          <p>Заварное пирожное с ванильным кремом и шоколадной глазурью.</p>
-          <div class="card-footer">
-            <span class="price">1700 ₸</span>
-          </div>
-        </article>
-
-        <article class="menu-card" data-category="desserts">
-          <img src="https://images.pexels.com/photos/4110008/pexels-photo-4110008.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Морковный торт">
-          <span class="menu-badge">Десерты</span>
-          <h3>Морковный торт</h3>
-          <p>Пряный морковный бисквит с орехами и сливочным кремом.</p>
-          <div class="card-footer">
-            <span class="price">2200 ₸</span>
-          </div>
-        </article>
-
-        <article class="menu-card" data-category="cold">
-          <img src="https://images.pexels.com/photos/2615323/pexels-photo-2615323.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Айс латте">
-          <span class="menu-badge">Холодные напитки</span>
-          <h3>Айс латте</h3>
-          <p>Охлажденный кофе с молоком и кубиками льда.</p>
-          <div class="card-footer">
-            <span class="price">1900 ₸</span>
-          </div>
-        </article>
-
-        <article class="menu-card" data-category="cold">
-          <img src="https://images.pexels.com/photos/5946971/pexels-photo-5946971.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Матча айс">
-          <span class="menu-badge">Холодные напитки</span>
-          <h3>Матча айс</h3>
-          <p>Холодная матча с молоком, льдом и легкой ванильной нотой.</p>
-          <div class="card-footer">
-            <span class="price">2300 ₸</span>
-          </div>
-        </article>
-
-        <article class="menu-card" data-category="cold">
-          <img src="https://images.pexels.com/photos/96974/pexels-photo-96974.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Лимонад">
-          <span class="menu-badge">Холодные напитки</span>
-          <h3>Лимонад</h3>
-          <p>Освежающий цитрусовый лимонад с мятой и газированной водой.</p>
-          <div class="card-footer">
-            <span class="price">1700 ₸</span>
-          </div>
-        </article>
-
-        <article class="menu-card" data-category="cold">
-          <img src="https://images.pexels.com/photos/1793035/pexels-photo-1793035.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Холодный чай">
-          <span class="menu-badge">Холодные напитки</span>
-          <h3>Холодный чай</h3>
-          <p>Черный чай со льдом, лимоном и аккуратной фруктовой сладостью.</p>
-          <div class="card-footer">
-            <span class="price">1600 ₸</span>
-          </div>
-        </article>
-
-        <article class="menu-card" data-category="cold">
-          <img src="https://images.pexels.com/photos/6207309/pexels-photo-6207309.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Эспрессо-тоник">
-          <span class="menu-badge">Холодные напитки</span>
-          <h3>Эспрессо-тоник</h3>
-          <p>Эспрессо, тоник, лед и цитрусовый акцент в послевкусии.</p>
-          <div class="card-footer">
-            <span class="price">2200 ₸</span>
-          </div>
-        </article>
-
-        <article class="menu-card" data-category="cold">
-          <img src="https://images.pexels.com/photos/1193335/pexels-photo-1193335.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Фраппе">
-          <span class="menu-badge">Холодные напитки</span>
-          <h3>Фраппе</h3>
-          <p>Взбитый холодный кофе с молоком, льдом и мягкой пенкой.</p>
-          <div class="card-footer">
-            <span class="price">2400 ₸</span>
-          </div>
-        </article>
-      </div>
-
-      <div class="menu-more">
-        <a class="menu-more-button" href="#contacts" data-whatsapp-reservation>Забронировать столик</a>
       </div>
     </section>
 
@@ -352,47 +86,63 @@
             от выбора зерна до температуры молока.
           </p>
           <p>
-            Каждое утро мы настраиваем помол, проверяем вкус эспрессо и готовим
-            напитки так, будто делаем их для близких друзей.
-          </p>
-          <p>
-            В нашем меню есть классика, авторские рецепты и сезонные вкусы.
-            Мы используем натуральные ингредиенты и не прячем вкус кофе за лишней сладостью.
-          </p>
-          <p>
-            Coffee Space - это не только напитки. Это теплый свет, спокойная музыка,
-            мягкие кресла и атмосфера, в которую хочется возвращаться.
+            В меню есть кофейная классика, завтраки, десерты и холодные напитки.
+            Полную подборку вынесли на отдельную страницу, чтобы главная оставалась легкой.
           </p>
 
-          <ul class="about-list">
-            <li>Свежая ежедневная обжарка</li>
-            <li>Натуральные ингредиенты</li>
-            <li>Авторские рецепты</li>
-            <li>Уютная атмосфера</li>
-          </ul>
-
-          <a class="about-button" href="#contacts">Подробнее</a>
+          <a class="about-button" href="menu.html">Открыть меню</a>
         </div>
       </div>
     </section>
 
     <section class="section contacts" id="contacts">
       <h2>Контакты</h2>
-      <a class="contacts-card contacts-address" href="https://2gis.kz/almaty/geo/9430047375024923" target="_blank" rel="noopener noreferrer">
-        <span class="contacts-card-icon" aria-hidden="true">
-          <svg width="28" height="28" viewBox="0 0 24 24">
-            <path d="M12 21s7-6.14 7-12A7 7 0 0 0 5 9c0 5.86 7 12 7 12Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
-            <circle cx="12" cy="9" r="2.6" fill="none" stroke="currentColor" stroke-width="1.8"/>
-          </svg>
-        </span>
-        <span class="contacts-card-content">
-          <strong>Адрес</strong>
-          <span>📍 Алматы,<br>мкр. Таугуль-1, дом 84</span>
-          <small>Нажмите, чтобы построить маршрут в 2GIS.</small>
-        </span>
-      </a>
-      <p><strong>Телефон:</strong> +7 776 980 43 24</p>
-      <p><strong>Время работы:</strong> ежедневно с 08:00 до 22:00</p>
+      <div class="contacts-grid">
+        <a class="contacts-card contacts-address" href="https://2gis.kz/almaty/geo/9430047375024923" target="_blank" rel="noopener noreferrer">
+          <span class="contacts-card-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24">
+              <path d="M12 21s7-6.14 7-12A7 7 0 0 0 5 9c0 5.86 7 12 7 12Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+              <circle cx="12" cy="9" r="2.6" fill="none" stroke="currentColor" stroke-width="1.8"/>
+            </svg>
+          </span>
+          <span class="contacts-card-content">
+            <strong>Адрес</strong>
+            <span>📍 Алматы,<br>мкр. Таугуль-1, дом 84</span>
+            <small>Нажмите, чтобы построить маршрут в 2GIS.</small>
+          </span>
+        </a>
+
+        <div class="contacts-card">
+          <span class="contacts-card-icon" aria-hidden="true">📞</span>
+          <span class="contacts-card-content">
+            <strong>Телефон</strong>
+            <span>+7 776 980 43 24</span>
+          </span>
+        </div>
+
+        <div class="contacts-card">
+          <span class="contacts-card-icon" aria-hidden="true">🕒</span>
+          <span class="contacts-card-content">
+            <strong>Время работы</strong>
+            <span>ежедневно с 08:00 до 22:00</span>
+          </span>
+        </div>
+
+        <div class="contacts-card instagram-card">
+          <span class="contacts-card-icon instagram-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24">
+              <rect x="5" y="5" width="14" height="14" rx="4" fill="none" stroke="currentColor" stroke-width="1.8"/>
+              <circle cx="12" cy="12" r="3.2" fill="none" stroke="currentColor" stroke-width="1.8"/>
+              <circle cx="16.4" cy="7.8" r="0.8" fill="currentColor"/>
+            </svg>
+          </span>
+          <span class="contacts-card-content">
+            <strong>Instagram</strong>
+            <a class="instagram-link" href="https://instagram.com/coffeespace" target="_blank" rel="noopener noreferrer">@coffeespace</a>
+            <small>Следите за новыми напитками, завтраками и акциями.</small>
+          </span>
+        </div>
+      </div>
       <a class="whatsapp-button" href="#" data-whatsapp-contact>Написать в WhatsApp</a>
     </section>
   </main>
@@ -404,3 +154,4 @@
   <script src="script.js"></script>
 </body>
 </html>
+
