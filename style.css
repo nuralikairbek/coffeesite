@@ -340,8 +340,9 @@ svg {
   padding-top: 62px;
   padding-bottom: 80px;
   background:
-    radial-gradient(circle at 12% 0%, rgba(140, 90, 50, 0.11), transparent 28%),
-    radial-gradient(circle at 92% 100%, rgba(139, 122, 104, 0.16), transparent 30%);
+    radial-gradient(circle at 18% 12%, rgba(140, 90, 50, 0.08), transparent 34%),
+    radial-gradient(circle at 88% 88%, rgba(226, 207, 183, 0.42), transparent 38%),
+    linear-gradient(180deg, transparent 0%, rgba(231, 215, 194, 0.26) 48%, rgba(226, 207, 183, 0.34) 100%);
 }
 
 .contacts-grid {
@@ -1106,7 +1107,9 @@ svg {
   }
 
   .hero h1 {
-    font-size: clamp(54px, 8vw, 72px);
+    font-size: clamp(52px, 13vw, 68px);
+    line-height: 0.95;
+    letter-spacing: -0.02em;
   }
 
   .hero-text {
@@ -1368,7 +1371,9 @@ svg {
   }
 
   .hero h1 {
-    font-size: clamp(42px, 12vw, 56px);
+    font-size: clamp(52px, 13vw, 68px);
+    line-height: 0.95;
+    letter-spacing: -0.02em;
   }
 
   .button {
