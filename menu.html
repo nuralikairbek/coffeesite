@@ -3,6 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Полное меню Coffee Space: кофе, завтраки, десерты и холодные напитки с ценами в тенге.">
+  <meta property="og:title" content="Меню Coffee Space">
+  <meta property="og:description" content="Кофе, завтраки, десерты и холодные напитки Coffee Space в Алматы.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="menu.html">
   <title>Меню Coffee Space</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,14 +19,14 @@
     <nav class="nav">
       <a class="back-link" href="index.html" aria-label="Вернуться на главную">← <span>Назад</span></a>
       <a class="logo" href="index.html#home">Coffee Space</a>
-      <button class="nav-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">
+      <button class="nav-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="menu-navigation">
         <span></span>
         <span></span>
         <span></span>
       </button>
-      <div class="nav-links">
+      <div class="nav-links" id="menu-navigation">
         <a href="index.html#home">Главная</a>
-        <a href="menu.html">Меню</a>
+        <a href="menu.html" aria-current="page">Меню</a>
         <a href="index.html#contacts">Контакты</a>
       </div>
       <a class="nav-button" href="index.html#contacts" data-whatsapp-reservation>Бронь</a>
@@ -40,16 +45,16 @@
 
       <div class="menu-filter" aria-label="Категории меню">
         <span class="filter-indicator" aria-hidden="true"></span>
-        <button class="filter-button active" type="button" data-filter="all">Все</button>
-        <button class="filter-button" type="button" data-filter="coffee">Кофе</button>
-        <button class="filter-button" type="button" data-filter="breakfast">Завтраки</button>
-        <button class="filter-button" type="button" data-filter="desserts">Десерты</button>
-        <button class="filter-button" type="button" data-filter="cold">Холодные напитки</button>
+        <button class="filter-button active" type="button" data-filter="all" aria-pressed="true">Все</button>
+        <button class="filter-button" type="button" data-filter="coffee" aria-pressed="false">Кофе</button>
+        <button class="filter-button" type="button" data-filter="breakfast" aria-pressed="false">Завтраки</button>
+        <button class="filter-button" type="button" data-filter="desserts" aria-pressed="false">Десерты</button>
+        <button class="filter-button" type="button" data-filter="cold" aria-pressed="false">Холодные напитки</button>
       </div>
 
       <div class="menu-grid">
         <article class="menu-card" data-category="coffee">
-          <img src="https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Капучино">
+          <img src="https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Капучино" loading="lazy" decoding="async" width="700" height="500">
           <span class="menu-badge">Кофе</span>
           <h3>Капучино</h3>
           <p>Эспрессо, молоко и нежная молочная пенка.</p>
@@ -59,7 +64,7 @@
         </article>
 
         <article class="menu-card" data-category="coffee">
-          <img src="https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Латте">
+          <img src="https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Латте" loading="lazy" decoding="async" width="700" height="500">
           <span class="menu-badge">Кофе</span>
           <h3>Латте</h3>
           <p>Мягкий кофейный напиток с большим количеством молока.</p>
@@ -69,7 +74,7 @@
         </article>
 
         <article class="menu-card" data-category="coffee">
-          <img src="https://images.pexels.com/photos/977876/pexels-photo-977876.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Американо">
+          <img src="https://images.pexels.com/photos/977876/pexels-photo-977876.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Американо" loading="lazy" decoding="async" width="700" height="500">
           <span class="menu-badge">Кофе</span>
           <h3>Американо</h3>
           <p>Классический черный кофе с насыщенным вкусом.</p>
@@ -79,7 +84,7 @@
         </article>
 
         <article class="menu-card" data-category="coffee">
-          <img src="https://images.pexels.com/photos/374885/pexels-photo-374885.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Раф">
+          <img src="https://images.pexels.com/photos/374885/pexels-photo-374885.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Раф" loading="lazy" decoding="async" width="700" height="500">
           <span class="menu-badge">Кофе</span>
           <h3>Раф</h3>
           <p>Сливочный кофе с ванильной ноткой и мягкой текстурой.</p>
@@ -89,7 +94,7 @@
         </article>
 
         <article class="menu-card" data-category="coffee">
-          <img src="https://images.pexels.com/photos/2396220/pexels-photo-2396220.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Флэт уайт">
+          <img src="https://images.pexels.com/photos/2396220/pexels-photo-2396220.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Флэт уайт" loading="lazy" decoding="async" width="700" height="500">
           <span class="menu-badge">Кофе</span>
           <h3>Флэт уайт</h3>
           <p>Насыщенный эспрессо с тонким слоем молочной пенки.</p>
@@ -99,7 +104,7 @@
         </article>
 
         <article class="menu-card" data-category="coffee">
-          <img src="https://images.pexels.com/photos/434213/pexels-photo-434213.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Мокко">
+          <img src="https://images.pexels.com/photos/434213/pexels-photo-434213.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Мокко" loading="lazy" decoding="async" width="700" height="500">
           <span class="menu-badge">Кофе</span>
           <h3>Мокко</h3>
           <p>Кофе с молоком, шоколадом и легкой сладостью.</p>
@@ -109,7 +114,7 @@
         </article>
 
         <article class="menu-card" data-category="breakfast">
-          <img src="https://images.pexels.com/photos/566566/pexels-photo-566566.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Круассан с лососем">
+          <img src="https://images.pexels.com/photos/566566/pexels-photo-566566.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Круассан с лососем" loading="lazy" decoding="async" width="700" height="500">
           <span class="menu-badge">Завтраки</span>
           <h3>Круассан с лососем</h3>
           <p>Слоеный круассан, слабосоленый лосось, крем-сыр и свежая зелень.</p>
@@ -119,7 +124,7 @@
         </article>
 
         <article class="menu-card" data-category="breakfast">
-          <img src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Сырники">
+          <img src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Сырники" loading="lazy" decoding="async" width="700" height="500">
           <span class="menu-badge">Завтраки</span>
           <h3>Сырники</h3>
           <p>Нежные творожные сырники со сметаной и ягодным соусом.</p>
@@ -129,7 +134,7 @@
         </article>
 
         <article class="menu-card" data-category="breakfast">
-          <img src="https://images.pexels.com/photos/1640774/pexels-photo-1640774.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Овсяная каша">
+          <img src="https://images.pexels.com/photos/1640774/pexels-photo-1640774.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Овсяная каша" loading="lazy" decoding="async" width="700" height="500">
           <span class="menu-badge">Завтраки</span>
           <h3>Овсяная каша</h3>
           <p>Овсяные хлопья на молоке с бананом, орехами и медом.</p>
@@ -139,7 +144,7 @@
         </article>
 
         <article class="menu-card" data-category="breakfast">
-          <img src="https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Авокадо-тост">
+          <img src="https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Авокадо-тост" loading="lazy" decoding="async" width="700" height="500">
           <span class="menu-badge">Завтраки</span>
           <h3>Авокадо-тост</h3>
           <p>Хрустящий тост с авокадо, яйцом пашот и лимонной заправкой.</p>
@@ -149,7 +154,7 @@
         </article>
 
         <article class="menu-card" data-category="breakfast">
-          <img src="https://images.pexels.com/photos/6294248/pexels-photo-6294248.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Омлет с сыром">
+          <img src="https://images.pexels.com/photos/6294248/pexels-photo-6294248.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Омлет с сыром" loading="lazy" decoding="async" width="700" height="500">
           <span class="menu-badge">Завтраки</span>
           <h3>Омлет с сыром</h3>
           <p>Пышный омлет с сыром, зеленью и свежими овощами.</p>
@@ -159,7 +164,7 @@
         </article>
 
         <article class="menu-card" data-category="breakfast">
-          <img src="https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Гранола с йогуртом">
+          <img src="https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Гранола с йогуртом" loading="lazy" decoding="async" width="700" height="500">
           <span class="menu-badge">Завтраки</span>
           <h3>Гранола с йогуртом</h3>
           <p>Хрустящая гранола, густой йогурт, ягоды и мед.</p>
@@ -169,7 +174,7 @@
         </article>
 
         <article class="menu-card" data-category="desserts">
-          <img src="https://images.pexels.com/photos/1126359/pexels-photo-1126359.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Чизкейк">
+          <img src="https://images.pexels.com/photos/1126359/pexels-photo-1126359.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Чизкейк" loading="lazy" decoding="async" width="700" height="500">
           <span class="menu-badge">Десерты</span>
           <h3>Чизкейк</h3>
           <p>Классический сливочный чизкейк на песочной основе.</p>
@@ -179,7 +184,7 @@
         </article>
 
         <article class="menu-card" data-category="desserts">
-          <img src="https://images.pexels.com/photos/6880219/pexels-photo-6880219.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Тирамису">
+          <img src="https://images.pexels.com/photos/6880219/pexels-photo-6880219.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Тирамису" loading="lazy" decoding="async" width="700" height="500">
           <span class="menu-badge">Десерты</span>
           <h3>Тирамису</h3>
           <p>Воздушный десерт с маскарпоне, эспрессо и какао.</p>
@@ -189,7 +194,7 @@
         </article>
 
         <article class="menu-card" data-category="desserts">
-          <img src="https://images.pexels.com/photos/291528/pexels-photo-291528.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Медовик">
+          <img src="https://images.pexels.com/photos/291528/pexels-photo-291528.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Медовик" loading="lazy" decoding="async" width="700" height="500">
           <span class="menu-badge">Десерты</span>
           <h3>Медовик</h3>
           <p>Тонкие медовые коржи с мягким сметанным кремом.</p>
@@ -199,7 +204,7 @@
         </article>
 
         <article class="menu-card" data-category="desserts">
-          <img src="https://images.pexels.com/photos/45202/brownie-dessert-cake-sweet-45202.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Брауни">
+          <img src="https://images.pexels.com/photos/45202/brownie-dessert-cake-sweet-45202.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Брауни" loading="lazy" decoding="async" width="700" height="500">
           <span class="menu-badge">Десерты</span>
           <h3>Брауни</h3>
           <p>Плотный шоколадный брауни с насыщенным какао и орехами.</p>
@@ -209,7 +214,7 @@
         </article>
 
         <article class="menu-card" data-category="desserts">
-          <img src="https://images.pexels.com/photos/372851/pexels-photo-372851.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Эклер">
+          <img src="https://images.pexels.com/photos/372851/pexels-photo-372851.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Эклер" loading="lazy" decoding="async" width="700" height="500">
           <span class="menu-badge">Десерты</span>
           <h3>Эклер</h3>
           <p>Заварное пирожное с ванильным кремом и шоколадной глазурью.</p>
@@ -219,7 +224,7 @@
         </article>
 
         <article class="menu-card" data-category="desserts">
-          <img src="https://images.pexels.com/photos/4110008/pexels-photo-4110008.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Морковный торт">
+          <img src="https://images.pexels.com/photos/4110008/pexels-photo-4110008.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Морковный торт" loading="lazy" decoding="async" width="700" height="500">
           <span class="menu-badge">Десерты</span>
           <h3>Морковный торт</h3>
           <p>Пряный морковный бисквит с орехами и сливочным кремом.</p>
@@ -229,7 +234,7 @@
         </article>
 
         <article class="menu-card" data-category="cold">
-          <img src="https://images.pexels.com/photos/2615323/pexels-photo-2615323.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Айс латте">
+          <img src="https://images.pexels.com/photos/2615323/pexels-photo-2615323.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Айс латте" loading="lazy" decoding="async" width="700" height="500">
           <span class="menu-badge">Холодные напитки</span>
           <h3>Айс латте</h3>
           <p>Охлажденный кофе с молоком и кубиками льда.</p>
@@ -239,7 +244,7 @@
         </article>
 
         <article class="menu-card" data-category="cold">
-          <img src="https://images.pexels.com/photos/5946971/pexels-photo-5946971.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Матча айс">
+          <img src="https://images.pexels.com/photos/5946971/pexels-photo-5946971.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Матча айс" loading="lazy" decoding="async" width="700" height="500">
           <span class="menu-badge">Холодные напитки</span>
           <h3>Матча айс</h3>
           <p>Холодная матча с молоком, льдом и легкой ванильной нотой.</p>
@@ -249,7 +254,7 @@
         </article>
 
         <article class="menu-card" data-category="cold">
-          <img src="https://images.pexels.com/photos/96974/pexels-photo-96974.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Лимонад">
+          <img src="https://images.pexels.com/photos/96974/pexels-photo-96974.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Лимонад" loading="lazy" decoding="async" width="700" height="500">
           <span class="menu-badge">Холодные напитки</span>
           <h3>Лимонад</h3>
           <p>Освежающий цитрусовый лимонад с мятой и газированной водой.</p>
@@ -259,7 +264,7 @@
         </article>
 
         <article class="menu-card" data-category="cold">
-          <img src="https://images.pexels.com/photos/1793035/pexels-photo-1793035.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Холодный чай">
+          <img src="https://images.pexels.com/photos/1793035/pexels-photo-1793035.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Холодный чай" loading="lazy" decoding="async" width="700" height="500">
           <span class="menu-badge">Холодные напитки</span>
           <h3>Холодный чай</h3>
           <p>Черный чай со льдом, лимоном и аккуратной фруктовой сладостью.</p>
@@ -269,7 +274,7 @@
         </article>
 
         <article class="menu-card" data-category="cold">
-          <img src="https://images.pexels.com/photos/6207309/pexels-photo-6207309.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Эспрессо-тоник">
+          <img src="https://images.pexels.com/photos/6207309/pexels-photo-6207309.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Эспрессо-тоник" loading="lazy" decoding="async" width="700" height="500">
           <span class="menu-badge">Холодные напитки</span>
           <h3>Эспрессо-тоник</h3>
           <p>Эспрессо, тоник, лед и цитрусовый акцент в послевкусии.</p>
@@ -279,7 +284,7 @@
         </article>
 
         <article class="menu-card" data-category="cold">
-          <img src="https://images.pexels.com/photos/1193335/pexels-photo-1193335.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Фраппе">
+          <img src="https://images.pexels.com/photos/1193335/pexels-photo-1193335.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop" alt="Фраппе" loading="lazy" decoding="async" width="700" height="500">
           <span class="menu-badge">Холодные напитки</span>
           <h3>Фраппе</h3>
           <p>Взбитый холодный кофе с молоком, льдом и мягкой пенкой.</p>
@@ -295,6 +300,36 @@
     </section>
 
   </main>
+
+  <div class="table-bar" aria-hidden="true">
+    <div class="table-bar-content">
+      <div>
+        <strong>Ваш стол</strong>
+        <span data-table-count>0 позиций</span>
+      </div>
+      <button class="table-show-button" type="button" aria-expanded="false" aria-controls="table-order-modal">
+        Показать официанту
+      </button>
+    </div>
+  </div>
+
+  <div class="table-modal" id="table-order-modal" role="dialog" aria-modal="true" aria-labelledby="table-modal-title" aria-hidden="true" tabindex="-1">
+    <div class="table-modal-backdrop" data-table-close></div>
+    <div class="table-modal-panel">
+      <button class="table-modal-close" type="button" aria-label="Закрыть список" data-table-close>×</button>
+      <p class="table-modal-brand">Coffee Space</p>
+      <h2 id="table-modal-title">Ваш заказ</h2>
+      <p class="table-modal-note">Покажите этот экран официанту</p>
+      <div class="table-order-list" data-table-list></div>
+      <div class="table-modal-footer">
+        <div class="table-total">
+          <span>Итого:</span>
+          <strong data-table-total>0 ₸</strong>
+        </div>
+        <button class="table-clear-button" type="button" data-table-clear>Очистить заказ</button>
+      </div>
+    </div>
+  </div>
 
   <footer class="footer">
     <p>© 2026 Coffee Space</p>
