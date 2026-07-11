@@ -339,10 +339,7 @@ svg {
 .contacts {
   padding-top: 62px;
   padding-bottom: 80px;
-  background:
-    radial-gradient(circle at 18% 12%, rgba(140, 90, 50, 0.08), transparent 34%),
-    radial-gradient(circle at 88% 88%, rgba(226, 207, 183, 0.42), transparent 38%),
-    linear-gradient(180deg, transparent 0%, rgba(231, 215, 194, 0.26) 48%, rgba(226, 207, 183, 0.34) 100%);
+  background: transparent;
 }
 
 .contacts-grid {
